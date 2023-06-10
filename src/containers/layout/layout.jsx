@@ -7,6 +7,7 @@ import CallIcon from "../../components/call-icon/call-icon";
 import Footer from "../../components/footer/footer";
 
 import { Container, PageContainer } from "./layout.styles";
+import Navbar from "@/src/components/navbar/navbar";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700", "900"],
@@ -18,7 +19,8 @@ const Layout = ({ children }) => {
 
   return (
     <Container className={roboto.className}>
-      <Header />
+      {/* <Header /> */}
+      <Navbar />
       <PageContainer>{children}</PageContainer>
       <Footer />
       <CallIcon setIsPopupActive={setIsPopupActive} />
