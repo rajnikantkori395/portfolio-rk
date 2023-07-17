@@ -21,7 +21,7 @@ export const MenuIcon = styled.div`
   color: #ffffff;
   font-size: 1.5rem;
   cursor: pointer;
-
+  z-index: inherit;
   @media (min-width: 768px) {
     display: none;
   }

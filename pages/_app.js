@@ -101,7 +101,7 @@ const themeColors = {
 const App = ({ Component, pageProps }) => {
   const router = useRouter();
 
-  const site = "https://wanderon.in";
+  const site = "https://xyz.in";
   const canonicalURL = `${site}${router.asPath.split("?")[0]}`;
 
   return (
