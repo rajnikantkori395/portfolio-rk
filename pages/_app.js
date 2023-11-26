@@ -6,9 +6,9 @@ import Layout from "../src/containers/layout/layout";
 
 const theme = {
   colors: {
-    // primary: "#990011",
+    primary: "#990011",
     // primary: "#EE4E34",
-    primary: "#2C2C54",
+    // primary: "#2C2C54",
     secondary: "#474787",
     accent1: "#AAABB8",
     accent2: "#ECECEC",
@@ -18,6 +18,7 @@ const theme = {
     button: "#2C2C54",
     background: "#2C2C54",
     card: "#474787",
+    text:"#fff"
   },
 };
 const themeColors = {

@@ -6,9 +6,19 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  position: relative;
+  position: fixed;
+  top:0;
+  left: 0;
   z-index: 100;
   width: 100%;
+  transition: background-color 0.3s ease;
+  background-color: ${(props) =>
+    props.isTransparent ?"transparent": "rgba(0,0,0,0.8)" };
+  @media screen and (max-width:768px){
+    /* background-color: ${(props) => props.theme.colors.primary}; */
+    background-color: rgba(0,0,0,0.8);
+  }
+
 `;
 
 export const Logo = styled.a`
