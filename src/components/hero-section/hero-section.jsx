@@ -1,7 +1,11 @@
-
-import React from 'react';
-import { BackgroundVideo, HeroSectionWrapper, SearchBar, TypingText } from './hero-section.styles';
-
+import React from "react";
+import {
+  BackgroundVideo,
+  HeroSectionWrapper,
+  Overlay,
+  SearchBar,
+  TypingText,
+} from "./hero-section.styles";
 
 const HeroSection = () => {
   return (
@@ -10,10 +14,9 @@ const HeroSection = () => {
         <source src="/assets/videos/hero.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </BackgroundVideo>
-      <div>
-        <TypingText>
-          Welcome to my Website
-        </TypingText>
+
+      <div className="text-container">
+        <TypingText>Welcome to my Website</TypingText>
         <SearchBar type="text" placeholder="Search..." />
       </div>
     </HeroSectionWrapper>
